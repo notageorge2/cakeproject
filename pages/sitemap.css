@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.site-map{
+    margin: 5rem;
+    
+}
+
+span{
+    color: orangered;
+}
+
+.site-map>ul{
+    list-style-type: decimal-leading-zero;
+    padding: 2rem;
+}
+
+.site-map>ul>li{
+    font-size: 2rem;
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Playfair Display', serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container .flow{
+    overflow-x: hidden;
+}
+.container{
+ padding: 30px;
+ justify-content: space-around;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-left: 50px;
+    margin-left: 60px; */
+    /* padding-left: -20px; */
+}
+ul li{
+    list-style: none;
+    font-size: 15px;
+    
+    /* padding-right: -20px; */
+}
+li{
+    text-decoration: none;
+   
+}
+ul li a{
+    color: black;
+}
+.footer{
+    background-color: #eaf0ea;  
+    padding-left: 170px;
+   justify-content: space-evenly;
+
+}
+.footer-col{
+    width: 180px;
+}
+
+.footer-col h4{
+    color: #1f0404;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 25px;
+    position: relative;
+}
+.footer-col h4::before{
+    position: absolute;
+    content:'' ;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 30px;
+}
+.footer-col ul li :not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    /* color:white; */
+    font-weight: 300;
+    /* color: #bbbbbb; */
+    display: block;
+    transition: all 0.3s ;
+}
+.footer-col ul li a:hover{
+    color:  #1f0404;
+    padding-left: 8px;
+
+}
+.footer-col .social-links a{
+display: inline-block;
+height: 30px;
+width: 30px;
+background-color: rgb(59, 24, 24);
+/* margin: 0 10px 10px 0; */
+margin-top: 10px;
+padding-top: 10px;
+padding-bottom: 30px;
+text-align: center;
+line-height: 0px;
+border-radius: 50%;
+color: white;
+transition: all 0.5s ease-in-out;
+}
+.footer-col .social-links .fab{
+margin: 0 0 6px 0;
+}
+.footer-col .social-links a:hover{
+    color: blue;
+    background-color: #ffffff;
+}
+.copyright{
+    text-align: center;
+    padding-right: 150px;
+    padding-top: 120px;
+}
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 574px) {
+    .footer-col{
+        width: 100%;
+    }
+}

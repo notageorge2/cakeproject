@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid; */
+}
+
+
+.order-form{
+    width: 90%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.order-form>form{
+    width: fit-content;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.order-form>form>input{
+    height: 2rem;
+    width:20rem
+}
+
+ @media (max-width:800px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: solid; */
+    }
+    
+    
+    .order-form{
+        width: 90%;
+        margin: auto;
+        margin-top: 10rem;
+    }
+    
+    .order-form>form{
+        width: fit-content;
+        margin: auto;
+        font-size: 2rem;
+    }
+    
+    .order-form>form>input{
+        height: 2rem;
+        width:20rem
+    }
+ }

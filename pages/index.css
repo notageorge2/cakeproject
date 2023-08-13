@@ -1,0 +1,1164 @@
+
+@font-face {
+    font-family: Tektur;
+    src: url(/static/Tektur_SemiCondensed-Regular.ttf);
+  }
+
+@font-face {
+    font-family: gar;
+    src: url(/static/Yellow\ Ginger.ttf);
+}
+
+@font-face {
+    font-family: Baby-text;
+    src: url(/static/AppetizersRDemoRegular.ttf);
+}
+
+
+  *{
+    color: rgb(137,37,51);
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    /* font-family: 'Lobster', cursive; */
+  
+    
+
+
+  }
+  
+
+  body{
+    font-family: 'Lobster', cursive;
+  
+  }
+
+
+  .banner{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 1rem;
+    
+  
+
+  }
+
+  .banner-image{
+    position: relative;
+    width: 57%;
+    height: 100%;
+    background-image: url(/src/images/cakepound.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .banner-image>h1{
+    position: absolute;
+    bottom: 9rem;
+    right: 10rem;
+    color: whitesmoke;
+    font-family: Baby-text;
+    font-size: 4rem;
+    font-weight: bolder;
+
+  }
+  .banner-left-for-description{
+    width: 43%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1;
+    padding: 5rem;
+    overflow: hidden;
+    background-color: rgb(242,233,219);
+   
+    
+  } 
+
+  .banner-description{
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    background-color: rgb(242,233,219);
+  }
+
+
+
+
+
+  
+  .pic-ctn {
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+
+  
+  .pic-ctn > div {
+    position: absolute;
+    left: 20%;
+    top: 0;
+    opacity: 0;
+    animation: display 10s infinite;
+    width: fit-content;
+    height: fit-content;
+    
+  }
+
+  .pic-ctn>div>h1{
+    font-size: 3rem;
+  }
+
+  .pic-ctn>div>img{
+    width: 20rem;
+    height: 15rem;
+    margin: auto;
+  }
+
+
+  
+  .slider:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .slider:nth-child(3) {
+    animation-delay: 4s;
+  }
+  .slider:nth-child(4) {
+    animation-delay: 6s;
+  }
+  .slider:nth-child(5) {
+    animation-delay: 8s;
+  }
+  .slider:nth-child(6) {
+    animation-delay: 10s;
+  }
+
+  .pic-ctn-btn{
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    padding: 0.5rem;
+    border:solid 0.5rem;
+    border-radius: 0.8rem;
+    position: absolute;
+    bottom: 15%;
+    right: 34%;
+    margin-bottom: 1rem;
+  }
+
+  .toggle{
+    position: absolute;
+    bottom: 1%;
+    right: 36%;
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+
+  .toggle>button{
+    font-size: 2rem;
+    font-weight: boldi;
+    padding: 0.5rem 0.8rem;
+    border-radius: 3rem;
+    border: solid 0.4rem;
+
+    
+  }
+
+  .section2{
+    margin-bottom: 2rem;
+    padding: 4rem;
+    
+  }
+   
+  .section2>div{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    background-color: bisque;
+   
+   
+   }
+
+   .section2>div>.description{
+    
+   }
+
+   .section2>div>.description>.top-hider{
+      height: 3rem;
+      background-color: white;
+      
+   }
+   .section2>div>.description>.description-text{
+    margin: 5rem;
+   }
+
+   .section2>div>.description>.description-text>h1{
+    font-size: 3rem;
+   }
+
+
+   .section2>div>.description>.description-text>p{
+    font-size: 1.5rem;
+    height: 100%;
+
+   }
+
+   .dots{
+    display: block;
+   }
+
+   .dots>div{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: brown;
+    margin: 0.2rem;
+   }
+
+ 
+  .section3{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 30rem;
+    padding: 2rem;
+    background-color: rgb(242,233,219) ;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8.5rem;
+  }
+
+
+  .section3>.description{
+    width: 100%;
+    padding: 4rem;
+    padding-bottom: 0;
+  }
+  .section3>.description>h1{
+    font-size: 2rem;
+    padding:  2rem;
+    padding-bottom: 1rem;
+    color: rgb(134,38,51);
+  }
+  .section3>.description>p{
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0 2rem;
+    
+  }
+
+  .section3-image{
+    background-image: url(/pages/pintchef1.jpg);
+    width: 100%;
+    height: 100%;
+    margin-left: 4rem;
+    background-repeat: no-repeat;
+  }
+
+  .section4{
+    background-color: rgb(170,128,102);
+    margin: 5rem;
+    width: 90%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+  
+  }
+   
+  .section4>.description{
+       width: 40%;
+       padding: 1rem;
+
+       
+  }
+
+
+  .section4>.description>h1{
+      font-size: 2.5rem;
+      font-weight: bolder;
+      padding-bottom: 1rem;
+      color: rgb(253,208,134);
+  }
+
+
+  .section4>.description>p{
+      font-size: 1rem;
+      line-height: 2rem;
+      color: white;
+  }
+
+  
+
+  .section4-image{
+    background-image: url(/src/images/bakerbynture.jpg);
+    width: 60%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    position: absolute;
+    right: -5%;
+    top:-10%;
+  }
+
+  .section5{
+    background-color: rgb(170,128,102);
+    margin: 4rem;
+    width: 90%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+  
+  }
+
+  .section5-image{
+    background-image: url(/src/images/vanilla.jpg);
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    position: absolute;
+    left: 12%;
+    top:-10%;
+    
+  }
+  .section5-description{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: white;
+    width: 35%;
+    position: absolute;
+    right: 1%;
+    top:10%;
+}
+
+
+.section5-description>h1{
+  transform: scaleY(2);
+  margin-bottom: 1.5rem;
+}
+
+.section5-description>p{
+  color: white;
+}
+
+.section6-link{
+  text-decoration: none;
+
+}
+
+.what-is-happening{
+  font-size: 2rem;
+  color: orangered;
+  padding: 1rem;
+  padding-left: 2rem;
+  font-family: gar;
+}
+
+.section6{
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 6rem;
+  
+
+}
+
+
+
+
+.section6>div>div{
+  align-items: center;
+  padding-top: 7rem;
+  padding: auto;
+  text-align: center;
+  width: 33rem;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.);
+  transition: all 2s;
+ 
+  
+}
+.section6>div>div:hover{
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+.section6-a>*>*, .section6-b>*>*{
+  padding: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  width: fit-content;
+  margin: auto;
+
+}
+
+
+
+
+.section6-a{
+  background-image: url(/src/images/cakebuscuit2.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section6-b{
+  background-image: url(/src/images/ff1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.section7-banner{
+     width: 100%;
+     height: 34rem;
+     background-image: url(/src/images/land2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+
+.section7-banner{
+  text-align: center;
+}
+
+.section7-banner>.content{
+  width: 100%;
+  height: 100%;
+  padding-top: 12rem;
+  background-color:rgb(0, 0, 0, 0.4)
+}
+
+.section7-banner>.content>h1{
+  font-size: 3rem;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+
+.section7-banner>.content>button{
+    padding: 2rem 4rem;
+    font-size: 1.3rem;
+    font-family: Tektur;
+    background-color: whitesmoke;
+    border: solid 0.6rem;
+
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 5rem;
+  border-top: solid;
+  margin-top: 2rem;
+  
+  
+}
+
+.footer>.left{
+  text-align: left;
+  align-items: start;
+
+ 
+}
+
+
+.footer>.right{
+
+}
+.footer>.right>.logo>img{
+    width: 12rem;
+}
+
+
+.footer>.left>ul{
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.footer>.left>ul>li>a, .footer>.left>ul>li {
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+
+.footer-icons{
+  display: flex;
+  
+}
+
+
+.footer-icons>img{
+  width: 2rem;
+  height: 2rem;
+  border: solid rgb(113, 9, 9, 0.5);
+
+}
+
+.last-footer-row{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-list{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.second-list>li{
+  margin: 0.5rem;
+}
+
+.flag{
+  width: 7rem;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+ 
+ 
+  /* ######################### media query begins here ########### */
+  /* ######################### media query begins here ########### */
+  /* ######################### media query begins here ########### */
+  /* ######################### media query begins here ########### */
+
+
+
+
+  
+  @media (max-width:800px) {
+    *{
+      color: rgb(137,37,51);
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+        
+  
+  
+    }
+    
+  
+    body{
+      font-family: Tektur;
+    
+    }
+  
+  
+    .banner{
+      display: flex;
+      flex-wrap: wrap;
+      height: 90vh;
+      width: 100%;
+      position: absolute;
+      top: 15.4%;
+    
+  
+    }
+  
+    .banner-image{
+      position:static;
+      width: 100%;
+      height: 100%;
+      background-image: url(/src/images/cakepound.jpg);
+      background-position: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+      text-align: center
+    }
+  
+    .banner-image>h1{
+      position: static;
+      bottom: 9rem;
+      right: 0em;
+      color: whitesmoke;
+      font-family: Baby-text;
+      font-size: 4rem;
+      font-weight: bolder;
+      margin-top: 70%;
+  
+    }
+    .banner-left-for-description{
+      width: 100%;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1;
+      padding: 0rem;
+      overflow: hidden;
+      background-color: rgb(242,233,219);
+     
+      
+    } 
+  
+    .banner-description{
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      text-align: center;
+      position: relative;
+      background-color: rgb(242,233,219);
+    }
+  
+  
+  
+  
+  
+    
+    .pic-ctn {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      
+    }
+    
+    @keyframes display {
+      0% {
+        transform: translateX(200px);
+        opacity: 0;
+      }
+      10% {
+        transform: translateX(30px);
+        opacity: 1;
+      }
+      20% {
+        transform: translateX(30px);
+        opacity: 1;
+      }
+      30% {
+        transform: translateX(-200px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(-200px);
+        opacity: 0;
+      }
+    }
+    
+    /* .pic-ctn {
+      position: relative;
+      width: 100vw;
+      height: 300px;
+      margin-top: 15vh;
+  
+    } */
+    
+    .pic-ctn > div {
+      position: absolute;
+      left: 15%;
+      top: 0;
+      opacity: 0;
+      animation: display 10s infinite;
+      width: fit-content;
+      height: fit-content;
+    
+      
+    }
+  
+    .pic-ctn>div>h1{
+      font-size: 3rem;
+    }
+  
+    .pic-ctn>div>img{
+      width: 13rem;
+      height: 13rem;
+      
+    }
+  
+  
+    
+    .slider:nth-child(2) {
+      animation-delay: 2s;
+    }
+    .slider:nth-child(3) {
+      animation-delay: 4s;
+    }
+    .slider:nth-child(4) {
+      animation-delay: 6s;
+    }
+    .slider:nth-child(5) {
+      animation-delay: 8s;
+    }
+    .slider:nth-child(6) {
+      animation-delay: 10s;
+    }
+  
+    .pic-ctn-btn{
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: white;
+      padding: 2rem 5rem;
+      border:solid 0.5rem;
+      border-radius: 0.8rem;
+      position: absolute;
+      bottom: 15%;
+      right: 10%;
+      margin-bottom: 1rem;
+    }
+  
+    .toggle{
+      position: absolute;
+      bottom: 1%;
+      right: 29%;
+      width: 10rem;
+      display: flex;
+      justify-content: space-between;
+     
+    }
+  
+    .toggle>button{
+      font-size: 2rem;
+      font-weight: boldi;
+      padding: 0.5rem 0.8rem;
+      border-radius: 3rem;
+      border: solid 0.4rem;
+  
+      
+    }
+    .section2{
+      display: none;
+      margin-bottom: 2rem;
+      padding: 4rem;
+      
+    }
+     
+    .section2>div{
+      display: flex;
+      width: fit-content;
+      margin: auto;
+      background-color: bisque;
+     
+     
+     }
+  
+     .section2>div>.description{
+      
+     }
+  
+     .section2>div>.description>.top-hider{
+        height: 3rem;
+        background-color: white;
+        
+     }
+     .section2>div>.description>.description-text{
+      margin: 5rem;
+     }
+  
+     .section2>div>.description>.description-text>h1{
+      font-size: 3rem;
+     }
+  
+  
+     .section2>div>.description>.description-text>p{
+      font-size: 1.5rem;
+      height: 100%;
+  
+     }
+  
+     .dots{
+      display: block;
+     }
+  
+     .dots>div{
+      width: 1rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+      background-color: brown;
+      margin: 0.2rem;
+     }
+  
+  
+   
+
+
+    .section3{
+      display: block;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: fit-content;
+      padding: 0rem;
+      background-color: rgb(242,233,219) ;
+      justify-content: space-around;
+      align-items: center;
+      position: static;
+      margin-top: 90rem;
+    }
+
+    
+  .section3>.description{
+    width: 100%;
+    padding: 0rem;
+    height: fit-content;
+  }
+  .section3>.description>h1{
+    font-size: 2rem;
+    padding:  0rem;
+  }
+  .section3>.description>p{
+    font-size: 1.2rem;
+    line-height: 1rem;
+    padding: 2rem;
+  }
+
+  .section3-image{
+    background-image: url(/pages/pintchef1.jpg);
+    width: 100%;
+    height: 30rem;
+    margin-left: 0rem;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
+  .section4{
+    background-color: rgb(170,128,102);
+    margin: 0rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    position: static;
+  
+  }
+   
+  .section4>.description{
+       width: 100%;
+       padding: 1rem;
+
+       
+  }
+
+
+  .section4>.description>h1{
+      font-size: 2.5rem;
+      font-weight: bolder;
+      padding-bottom: 1rem;
+      color: rgb(253,208,134);
+  }
+
+
+  .section4>.description>p{
+      font-size: 1rem;
+      line-height: 2rem;
+      color: white;
+  }
+
+  
+
+  .section4-image{
+    background-image: url(/src/images/bakerbynture.jpg);
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: cover;
+    position: static;
+    right: -5%;
+    top:-10%;
+  }
+
+  .section5{
+    background-color: rgb(170,128,102);
+    margin: 0rem;
+    margin-top: 4rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    position: static;
+  
+  }
+
+  .section5-image{
+    background-image: url(/src/images/vanilla.jpg);
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: cover;
+    position: static;
+   
+  }
+  .section5-description{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: white;
+    width: 100%;
+    position: static;
+    padding-top: 5rem;
+}
+
+
+.section5-description>h1{
+  transform: scaleY(2);
+  margin-bottom: 1.5rem;
+}
+
+.section5-description>p{
+  color: white;
+}
+
+.section6-link{
+  text-decoration: none;
+
+}
+
+.what-is-happening{
+  font-size: 2rem;
+  color: orangered;
+  padding: 1rem;
+  padding-left: 2rem;
+  font-family: gar;
+}
+
+.section6{
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  margin-bottom: 6rem;
+  
+
+}
+
+
+
+
+.section6>div>div{
+  align-items: center;
+  padding-top: 7rem;
+  padding: auto;
+  text-align: center;
+  width: 11rem;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.);
+  transition: all 2s;
+ 
+  
+}
+.section6>div>div:hover{
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+.section6-a>*>*, .section6-b>*>*{
+  padding: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  width: fit-content;
+  margin: auto;
+
+}
+
+
+
+
+.section6-a{
+  background-image: url(/src/images/cakebuscuit2.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section6-b{
+  background-image: url(/src/images/ff1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.section7-banner{
+     width: 100%;
+     height: 34rem;
+     background-image: url(/src/images/land2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+
+.section7-banner{
+  text-align: center;
+}
+
+.section7-banner>.content{
+  width: 100%;
+  height: 100%;
+  padding-top: 12rem;
+  background-color:rgb(0, 0, 0, 0.4)
+}
+
+.section7-banner>.content>h1{
+  font-size: 3rem;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+
+.section7-banner>.content>button{
+    padding: 2rem 4rem;
+    font-size: 1.3rem;
+    font-family: Tektur;
+    background-color: whitesmoke;
+    border: solid 0.6rem;
+
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 5rem;
+  border-top: solid;
+  margin-top: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  
+
+  
+  
+}
+
+.footer>.left{
+  text-align: left;
+  align-items: start;
+
+ 
+}
+
+
+.footer>.right{
+
+
+}
+.footer>.right>.logo>img{
+    width: 5rem;
+}
+
+
+.footer>.left>ul{
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.footer>.left>ul>li>a, .footer>.left>ul>li {
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+
+.footer-icons{
+  display: flex;
+  
+}
+
+
+.footer-icons>img{
+  width: 2rem;
+  height: 2rem;
+  border: solid rgb(113, 9, 9, 0.5);
+
+}
+
+.last-footer-row{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-list{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.second-list>li{
+  margin: 0.5rem;
+}
+
+.flag{
+  width: 2rem;
+}
+
+  
+  
+
+
+  }
+
+  
+  
+
+
+ 
+  
+

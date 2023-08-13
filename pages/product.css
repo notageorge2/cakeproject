@@ -1,0 +1,56 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1-products{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.all-products{
+   font-size: 2rem;
+   font-family: gar;
+}
+
+.product-container{
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    background-color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem;
+
+}
+
+.product-row{
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.product-row>div{
+    width: fit-content;
+    margin: 1rem;
+    text-align: center;
+   
+    padding: 1rem;
+}
+
+.product-row>div>a>img{
+    width: 15rem;
+    height:15rem;
+}
+
+.order-button{
+    padding: 1rem 2rem;
+}
+
+
+.section7-banner{
+    background-image: url(/src/images/cobs-product-cape-seed-loaf-583x400.png);
+}

@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media all and (268px <= width <= 768px) {
+  body{
+      overflow-x: hidden;
+      max-width: fit-content;
+  }
+}
+/* .container .flow{
+    overflow-x: hidden;
+} */
+
+.container img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .franchise h1{
+    color: rgb(242,233,219);
+    display: flex;
+    position: relative;
+    top: -250px;
+    font-size: 70px;
+    left: 150px;
+    flex-wrap: wrap;
+   
+  }
+
+nav {
+  float: right; 
+  flex-wrap: wrap;
+  margin: auto;
+  padding-bottom: -200px;
+  justify-content: space-around;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* .nav-list .now{
+  background-color: red;
+} */
+nav ul li {
+  float: left;
+  position: relative;
+  top: -150px;
+  
+  /* left: -20px; */
+}
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  
+  
+  line-height: 70px;
+  background: #ffffff;
+  color: #7B3F00;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background: #f2f2f2;
+  color: #fb5958;
+  
+}
+nav ul li a:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+.section3{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height:50rem ;
+  padding: 5rem;
+  background-color: rgb(242,233,219);
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.section3>.description{
+  width: 100%;
+  padding: 8rem;
+}
+.section3>.description>h2{
+  font-size: 2rem;
+  padding: 3rem;
+  margin-left: -30px;
+  color: red;
+ 
+}
+.section3>.description>p{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0 5 rem;
+}
+
+.section3-image{
+  /* background-image: url(/pages/pintchef1.jpg); */
+  width: 80%;
+  height: 100%;
+  margin-right: 4rem;
+  background-repeat: no-repeat;
+}
+
+.why{
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  padding: 10rem;
+}
+
+.section4{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height:50rem ;
+  padding: 5rem;
+  background-color: rgb(202, 224, 222);
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.section4>.description{
+  width: 100%;
+  padding: 8rem;
+}
+.section4>.description>h2{
+  font-size: 2rem;
+  padding: 3rem;
+  margin-left: -30px;
+  color: red;
+ 
+}
+.section4>.description>p{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0 5 rem;
+}
+
+ .image2{
+  /* background-image: url(/pages/pintchef1.jpg); */
+  width: 80%;
+  height: 100%;
+  margin-right: 4rem;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -200px;
+}

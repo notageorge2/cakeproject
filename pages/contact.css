@@ -1,0 +1,45 @@
+.contact-box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+form>label{
+    font-size: 2rem;
+}
+
+form>input{
+    height: 2rem;
+    width: 20rem;
+}
+
+form>button{
+    font-size: 1rem;
+    padding: 0 1rem
+}
+
+
+@media (max-width:800px) {
+    .contact-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    form>label{
+        font-size: 2rem;
+    }
+    
+    form>input{
+        height: 2rem;
+        width: 20rem;
+    }
+    
+    form>button{
+        font-size: 1rem;
+        padding: 0 1rem
+    }
+
+   
+}
